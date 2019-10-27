@@ -68,7 +68,7 @@ export default class Form extends Component {
                     </p>
                     {/* <button onClick = {this.handleFormClick}>Send</button> */}
                     <button>Send</button>
-                    </form>
+                </form>
             </div>
         )
     }

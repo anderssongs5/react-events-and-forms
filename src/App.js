@@ -5,7 +5,18 @@ class App extends Component {
   constructor() {
     super();
     this.state = {mouseX: 0, mouseY: 0};
-    //this.handleMouseMove = this.handleMouseMove.bind(this);
+    // this.handleMouseMove = this.handleMouseMove.bind(this);
+  }
+
+  handleClick (e){
+    console.log(e)
+    console.log(e.nativeEvent)
+    alert('Hi there!')
+  }
+
+  handleMouseMove = (e) => {
+    const {clientX, clientY} = e
+    this.setState({mouseX: clientX, mouseY: clientY})
   }
 
   render() {
